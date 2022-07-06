@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Petit Plats</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="./src/assets/icons/logo.svg" alt="logo">
+        <h1 aria-label="Les petits plats">Les petits plats</h1>
+    </header>
+    <main>
+        </div class="search">
+        <form method="post" action="#.php">
+            <label for="search"></label>
+            <input class="js-searchBar" type="search" placeholder="Rechercher une recette" aria-label="search" name="search" minlength="2">
+            <img class="logo_search" src="./src/assets/icons/logo_search.svg" alt="logo_search">
+        </form>
+        <div class="filter">
+            <div class="filterElements blue" id="filterIngrediants">
+                <label for="filterIngrediants" aria-label="filterIngredients">Ingredients</label>
+                <menue name="select" aria-label="filterIngrediants">
+                </menue>
+                <img class="arrowRotate180" src="src/assets/icons/arrow.svg" alt="arrow menue">
+            </div>
+            <div class="filterElements choiceIngrediants hidden">
+                <div class="displayMenue">
+                    <form method="post">
+                        <label for="searchTag"></label>
+                        <input class="searchTag blue" type="searchTag" placeholder="Rechercher un Ingredients"
+                            aria-label="Rechercher un Ingredients" name="Rechercher un Ingredients" ninlenght="2">
+                    </form>
+                    <img class="arrowRotate0" src="src/assets/icons/arrow.svg" alt="arrow menue">
+                </div>
+                <div class="list listIgredients">
+                </div>
+            </div>
+            <div class="filterElements green" id="filterAppareils">
+                <label for="filterAppareils" aria-label="filterAppareils">Appareils</label>
+                <menue name="select" aria-label="filterAppareils">
+                </menue>
+                <img class="arrowRotate180" src="src/assets/icons/arrow.svg" alt="arrow menue">
+            </div>
+            <div class="filterElements choiceAppareils hidden">
+                <div class="displayMenue">
+                    <form method="post">
+                        <label for="searchTag"></label>
+                        <input class="searchTag green" type="searchTag" placeholder="Rechercher un Appareils"
+                            aria-label="Rechercher un Appareils" name="Rechercher un Appareils" ninlenght="2">
+                    </form>
+                    <img class="arrowRotate0" src="src/assets/icons/arrow.svg" alt="arrow menue">
+                </div>
+                <div class="list listAppareils">
+                </div>
+            </div>
+            <div class="filterElements red" id="filterUstensiles">
+                <label for="filterUstensiles" id="filterUstensiles" aria-label="filterUstensiles">Ustensiles</label>
+                <menue id="filterUstensiles" name="select" aria-label="filterUstensiles">
+                </menue>
+                <img class="arrowRotate180" src="src/assets/icons/arrow.svg" alt="arrow menue">
+            </div>
+            <div class="filterElements choiceUstensiles hidden">
+                <div class="displayMenue">
+                    <form method="post">
+                        <label for="searchTag"></label>
+                        <input class="searchTag red" type="searchTag" placeholder="Rechercher un Ustansiles"
+                            aria-label="Rechercher un Ustansiles" name="Rechercher un Ustansiles" ninlenght="2">
+                    </form>
+                    <img class="arrowRotate0" src="src/assets/icons/arrow.svg" alt="arrow menue">
+                </div>
+                <div class="list ListUstensiles"> 
+                </div>
+            </div>
+        </div>
+        <div class="contenerRecette">
+        </div>
+    </main>
+    <script src="./src/scripts/page/index.js" type="module"></script>
+    <!-- <script src="./src/scripts/factories/test.js" type="module"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "les-petits-plats",
+  "version": "1.0.0",
+  "description": "P7 oc",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./src/sass/main.scss:./src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lionel-Lo/Les-Petits-Plats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lionel-Lo/Les-Petits-Plats/issues"
+  },
+  "homepage": "https://github.com/Lionel-Lo/Les-Petits-Plats#readme"
+}
