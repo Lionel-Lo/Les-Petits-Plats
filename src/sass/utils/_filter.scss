@@ -1,0 +1,135 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 25px;
+
+    .filterElements {
+        width: 170px;
+        height: 69px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #FFFFFF;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 5px;
+        margin-right: 20px;
+
+        .arrowRotate180 {
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+    }
+
+    .choiceIngrediants {
+        background-color: #3282F7;
+        width: 667px;
+        height: 397px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 28px 0 28px;
+        @media only screen and (max-width: 767px){
+            height: 200px;
+        }
+
+    }
+
+    .choiceAppareils {
+        background-color: #68D9A4;
+        width: 667px;
+        height: 397px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 28px 0 28px;
+        @media only screen and (max-width: 767px){
+            height: 200px;
+        }
+    }
+
+    .choiceUstensiles {
+        background-color: #ED6454;
+        width: 667px;
+        height: 397px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 28px 0 28px;
+        @media only screen and (max-width: 767px){
+            height: 200px;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .blue {
+        background-color: #3282F7;
+    }
+
+    .green {
+        background-color: #68D9A4;
+    }
+
+    .red {
+        background-color: #ED6454;
+    }
+}
+
+.displayMenue {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    .arrowRotate0 {
+        transform: rotate(0deg);
+        cursor: pointer;
+    }
+    .searchTag{
+        height: 100%;
+        padding: 0;
+        color: #FFFFFF;
+        &::placeholder{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.5;
+            text-align: left;
+            
+        }
+    }
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    overflow: scroll;
+
+    div {
+        padding: 10px 20px 10px 20px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        width: 26%;
+        cursor: pointer;
+    }
+}
